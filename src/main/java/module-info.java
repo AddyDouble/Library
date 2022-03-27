@@ -8,4 +8,6 @@ module com.library {
 
     opens com.library to javafx.fxml;
     exports com.library;
+    exports com.library.controllers;
+    opens com.library.controllers to javafx.fxml;
 }
