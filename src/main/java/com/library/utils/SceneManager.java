@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 public class SceneManager {
     public static void loadScene(Stage stage, String fxml) throws Exception{
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxml));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/" + fxml));
             Scene scene = new Scene(fxmlLoader.load());
             stage.setScene(scene);
             stage.show();
