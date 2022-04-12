@@ -1,4 +1,4 @@
-package com.library.controllers;
+package com.library.controllers.admin;
 
 import com.library.models.Librarian;
 import com.library.utils.DbConnection;
@@ -34,7 +34,7 @@ public class ViewLibrarianController implements Initializable {
     @FXML
     private void HandleButtonAction (ActionEvent event) throws Exception{
             if(event.getSource() == buttonBack)
-                SceneManager.loadScene((Stage) buttonBack.getScene().getWindow(), "adminMenu-view.fxml");
+                SceneManager.loadScene((Stage) buttonBack.getScene().getWindow(), "admin/adminMenu-view.fxml");
     }
 
     private void loadValues(){

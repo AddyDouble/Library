@@ -20,10 +20,10 @@ public class MainController {
         FXMLLoader fxmlLoader;
 
         if(event.getSource() == buttonAdminLogin){
-            SceneManager.loadScene((Stage) buttonAdminLogin.getScene().getWindow(), "adminLogin-view.fxml");
+            SceneManager.loadScene((Stage) buttonAdminLogin.getScene().getWindow(), "admin/adminLogin-view.fxml");
         }
         else{
-            SceneManager.loadScene((Stage) buttonLibrarianLogin.getScene().getWindow(), "librarianLogin-view.fxml");
+            SceneManager.loadScene((Stage) buttonLibrarianLogin.getScene().getWindow(), "librarian/librarianLogin-view.fxml");
         }
     }
 }

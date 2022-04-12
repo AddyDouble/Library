@@ -1,4 +1,4 @@
-package com.library.controllers;
+package com.library.controllers.admin;
 
 import com.library.utils.SceneManager;
 import javafx.event.ActionEvent;
@@ -13,11 +13,11 @@ public class AdminMenuController {
     @FXML
     private void HandleButtonAction (ActionEvent event) throws Exception{
         if(event.getSource() == buttonAddLibrarian)
-            SceneManager.loadScene((Stage) buttonAddLibrarian.getScene().getWindow(), "addLibrarian-view.fxml");
+            SceneManager.loadScene((Stage) buttonAddLibrarian.getScene().getWindow(), "admin/addLibrarian-view.fxml");
         else if(event.getSource() == buttonViewLibrarian)
-            SceneManager.loadScene((Stage) buttonViewLibrarian.getScene().getWindow(), "viewLibrarian-view.fxml");
+            SceneManager.loadScene((Stage) buttonViewLibrarian.getScene().getWindow(), "admin/viewLibrarian-view.fxml");
         else if(event.getSource() == buttonDeleteLibrarian)
-            SceneManager.loadScene((Stage) buttonDeleteLibrarian.getScene().getWindow(), "deleteLibrarian-view.fxml");
+            SceneManager.loadScene((Stage) buttonDeleteLibrarian.getScene().getWindow(), "admin/deleteLibrarian-view.fxml");
         else if(event.getSource() == buttonLogout)
             SceneManager.loadScene((Stage) buttonLogout.getScene().getWindow(), "main-view.fxml");
 

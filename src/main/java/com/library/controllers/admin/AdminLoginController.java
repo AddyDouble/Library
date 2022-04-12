@@ -1,4 +1,4 @@
-package com.library.controllers;
+package com.library.controllers.admin;
 
 import com.library.utils.SceneManager;
 import javafx.event.ActionEvent;
@@ -41,7 +41,7 @@ public class AdminLoginController {
             return;
         }
 
-        SceneManager.loadScene((Stage) textWarning.getScene().getWindow(), "adminMenu-view.fxml");
+        SceneManager.loadScene((Stage) textWarning.getScene().getWindow(), "admin/adminMenu-view.fxml");
     }
 
 }

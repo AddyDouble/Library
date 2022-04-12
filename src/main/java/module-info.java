@@ -11,8 +11,12 @@ module com.library {
 
     opens com.library to javafx.fxml;
     exports com.library;
-    exports com.library.controllers;
     exports com.library.models;
-    opens com.library.controllers to javafx.fxml;
     opens com.library.models to javafx.fxml;
+    exports com.library.controllers.admin;
+    opens com.library.controllers.admin to javafx.fxml;
+    exports com.library.controllers.librarian;
+    opens com.library.controllers.librarian to javafx.fxml;
+    exports com.library.controllers;
+    opens com.library.controllers to javafx.fxml;
 }
